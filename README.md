@@ -9,41 +9,41 @@ sudo ./installation.sh
 
 ## Languages:
 
-python3.11
-go1.20.5
+- python3.11
+- go1.20.5
 
 ## Tools:
 
-nmap
-dnsutils
-Massdns
-Subfinder
-Sublist3r
-Assetfinder
-ffuf
-nuclei
-waybackurls
-waymore
-amass
-interactsh
+- nmap
+- dnsutils
+- Massdns
+- Subfinder
+- Sublist3r
+- Assetfinder
+- ffuf
+- nuclei
+- waybackurls
+- waymore
+- amass
+- interactsh
 
 ## Wordlists:
 
-Seclists
-JHaddix Wordlist
-Nahamsec list
+- Seclists
+- JHaddix Wordlist
+- Nahamsec list
 
 ## SQL Injection:
 
-SQLmap
+- SQLmap
 
 ## Useful Tools:
 
-anew
-unew
-gf
-httprobe
-httpx
-arjun
-gau
-meg
+- anew
+- unew
+- gf
+- httprobe
+- httpx
+- arjun
+- gau
+- meg
