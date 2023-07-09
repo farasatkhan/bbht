@@ -111,6 +111,13 @@ wget https://gist.githubusercontent.com/Leoid/38984017886cd058a314dfda5c3d6c6e/r
 mv 'Nahamsec Thread' nahamsec_discovery_list.txt
 echo "Done! Nahamsec list downloaded.";
 
+# install orwagodfather Wordlist
+echo "downloading orwagodfather wordlist"
+mkdir /home/tools/custom_wordlist
+cd /home/tools/custom_wordlist
+git clone https://github.com/orwagodfather/WordList.git
+echo "Done! orwagodfather wordlist downloaded.";
+sleep 1.5
 
 #---------Vuln SQL
 #SQLmap
@@ -186,23 +193,31 @@ cd waymore
 pip3 install -r requirements.txt
 sudo python setup.py install
 
-#Http amass
+# amass
 echo "Installing amass";
 go install -v github.com/owasp-amass/amass/v3/...@master && ln -s ~/go/bin/amass /usr/local/bin/;
 cd /home/tools/
 echo "Done! amass installed.";
 sleep 1.5
 
-#Http interactsh
+# interactsh
 echo "Installing interactsh";
 go install -v github.com/projectdiscovery/interactsh/cmd/interactsh-client@latest && ln -s ~/go/bin/interactsh-client /usr/local/bin/;
 cd /home/tools/
 echo "Done! interactsh installed.";
 sleep 1.5
 
-#Http meg
+# meg
 echo "Installing meg";
 go install github.com/tomnomnom/meg@latest && ln -s ~/go/bin/meg /usr/local/bin/;
 cd /home/tools/
 echo "Done! meg installed.";
+sleep 1.5
+
+# naabu
+echo "Installing naabu";
+cd /home/tools/
+go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest && ln -s ~/go/bin/naabu /usr/local/bin/;
+cd /home/tools/
+echo "Done! naabu installed.";
 sleep 1.5
