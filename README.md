@@ -15,6 +15,7 @@ sudo ./installation.sh
 ## Tools:
 
 - nmap
+- naabu
 - dnsutils
 - Massdns
 - Subfinder
@@ -32,6 +33,7 @@ sudo ./installation.sh
 - Seclists
 - JHaddix Wordlist
 - Nahamsec list
+- orwagodfather Wordlist
 
 ## SQL Injection:
 
