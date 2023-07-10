@@ -229,3 +229,11 @@ go install github.com/tomnomnom/qsreplace@latest && ln -s ~/go/bin/qsreplace /us
 cd /home/tools/
 echo "Done! qsreplace installed.";
 sleep 1.5
+
+# unfurl
+echo "Installing unfurl";
+cd /home/tools/
+go install github.com/tomnomnom/unfurl@latest && ln -s ~/go/bin/unfurl /usr/local/bin/;
+cd /home/tools/
+echo "Done! unfurl installed.";
+sleep 1.5

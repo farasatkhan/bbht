@@ -50,3 +50,4 @@ sudo ./installation.sh
 - gau
 - meg
 - qsreplace
+- unfurl
