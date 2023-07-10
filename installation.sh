@@ -221,3 +221,11 @@ go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest && ln -s ~/g
 cd /home/tools/
 echo "Done! naabu installed.";
 sleep 1.5
+
+# qsreplace
+echo "Installing qsreplace";
+cd /home/tools/
+go install github.com/tomnomnom/qsreplace@latest && ln -s ~/go/bin/qsreplace /usr/local/bin/;
+cd /home/tools/
+echo "Done! qsreplace installed.";
+sleep 1.5
