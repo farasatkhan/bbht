@@ -47,3 +47,4 @@ sudo ./installation.sh
 - arjun
 - gau
 - meg
+- qsreplace
