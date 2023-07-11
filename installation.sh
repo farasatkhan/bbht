@@ -119,6 +119,14 @@ git clone https://github.com/orwagodfather/WordList.git
 echo "Done! orwagodfather wordlist downloaded.";
 sleep 1.5
 
+# install OneListForAll
+echo "downloading OneListForAll"
+mkdir /home/tools/custom_wordlist
+cd /home/tools/custom_wordlist
+git clone https://github.com/six2dez/OneListForAll.git
+echo "Done! OneListForAll downloaded.";
+sleep 1.5
+
 #---------Vuln SQL
 #SQLmap
 echo "Installing sqlmap";
