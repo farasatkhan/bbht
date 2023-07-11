@@ -51,3 +51,4 @@ sudo ./installation.sh
 - meg
 - qsreplace
 - unfurl
+- jsluice

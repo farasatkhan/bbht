@@ -237,3 +237,11 @@ go install github.com/tomnomnom/unfurl@latest && ln -s ~/go/bin/unfurl /usr/loca
 cd /home/tools/
 echo "Done! unfurl installed.";
 sleep 1.5
+
+# jsluice
+echo "Installing jsluice";
+cd /home/tools/
+go install github.com/BishopFox/jsluice/cmd/jsluice@latest && ln -s ~/go/bin/jsluice /usr/local/bin/;
+cd /home/tools/
+echo "Done! jsluice installed.";
+sleep 1.5
