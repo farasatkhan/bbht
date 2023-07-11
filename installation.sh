@@ -3,6 +3,7 @@ sudo apt -y upgrade
 
 # bunch of new packages including gcc, g++ and make.
 sudo apt install build-essential
+sudo apt install -y libpcap-dev
 
 #---------Install Python
 sudo apt install -y software-properties-common
