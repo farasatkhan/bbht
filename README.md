@@ -34,6 +34,7 @@ sudo ./installation.sh
 - JHaddix Wordlist
 - Nahamsec list
 - orwagodfather Wordlist
+- six2dez OneListForAll
 
 ## SQL Injection:
 
