@@ -254,3 +254,11 @@ go install github.com/BishopFox/jsluice/cmd/jsluice@latest && ln -s ~/go/bin/jsl
 cd /home/tools/
 echo "Done! jsluice installed.";
 sleep 1.5
+
+# XSS scanner
+echo "Installing dalfox";
+cd /home/tools/
+go install github.com/hahwul/dalfox/v2@latest && ln -s ~/go/bin/dalfox /usr/local/bin/;
+cd /home/tools/
+echo "Done! dalfox installed.";
+sleep 1.5

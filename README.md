@@ -40,6 +40,10 @@ sudo ./installation.sh
 
 - SQLmap
 
+### XSS scanner
+
+- dalfox
+
 ## Useful Tools:
 
 - anew
