@@ -40,7 +40,7 @@ sudo ./installation.sh
 
 - SQLmap
 
-### XSS scanner
+## XSS scanner
 
 - dalfox
 
