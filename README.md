@@ -27,6 +27,7 @@ sudo ./installation.sh
 - waymore
 - amass
 - interactsh
+- recollapse
 
 ## Wordlists:
 
@@ -57,3 +58,4 @@ sudo ./installation.sh
 - qsreplace
 - unfurl
 - jsluice
+- mildew
