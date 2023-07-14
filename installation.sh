@@ -84,6 +84,12 @@ ln -s ~/go/bin/ffuf /usr/local/bin/;
 echo "Done! Ffuf installed.";
 sleep 1.5
 
+#recollapse
+echo "Installing recollapse";
+git clone https://github.com/0xacb/recollapse.git
+./install.sh
+echo "Done! recollapse installed.";
+
 #---------Wordlists
 #install Seclists
 echo "Downloading Seclists";
@@ -261,4 +267,12 @@ cd /home/tools/
 go install github.com/hahwul/dalfox/v2@latest && ln -s ~/go/bin/dalfox /usr/local/bin/;
 cd /home/tools/
 echo "Done! dalfox installed.";
+sleep 1.5
+
+# Custom Tools
+echo "Installing mildew";
+cd /home/tools/
+go install github.com/daehee/mildew/cmd/mildew@latest && ln -s ~/go/bin/mildew /usr/local/bin/;
+cd /home/tools/
+echo "Done! mildew installed.";
 sleep 1.5
