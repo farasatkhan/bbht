@@ -44,6 +44,7 @@ sudo ./installation.sh
 ## XSS scanner
 
 - dalfox
+- QuickXSS
 
 ## Useful Tools:
 
@@ -59,3 +60,5 @@ sudo ./installation.sh
 - unfurl
 - jsluice
 - mildew
+- cf-check
+- filter-resolved

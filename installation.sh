@@ -134,6 +134,22 @@ git clone https://github.com/six2dez/OneListForAll.git
 echo "Done! OneListForAll downloaded.";
 sleep 1.5
 
+# install API-Wordlist
+echo "downloading API-Wordlist"
+mkdir /home/tools/custom_wordlist
+cd /home/tools/custom_wordlist
+git clone https://github.com/Net-hunter121/API-Wordlist.git
+echo "Done! API-Wordlist downloaded.";
+sleep 1.5
+
+# install assetnote Wordlist
+echo "downloading assetnote Wordlist"
+mkdir /home/tools/custom_wordlist
+cd /home/tools/custom_wordlist
+wget -r --no-parent -R "index.html*" https://wordlists-cdn.assetnote.io/data/ -nH -e robots=off
+echo "Done! assetnote Wordlist downloaded.";
+sleep 1.5
+
 #---------Vuln SQL
 #SQLmap
 echo "Installing sqlmap";
@@ -210,69 +226,76 @@ sudo python setup.py install
 
 # amass
 echo "Installing amass";
-go install -v github.com/owasp-amass/amass/v3/...@master && ln -s ~/go/bin/amass /usr/local/bin/;
+go install github.com/owasp-amass/amass/v3/...@master && ln -s ~/go/bin/amass /usr/local/bin/;
 cd /home/tools/
 echo "Done! amass installed.";
 sleep 1.5
 
 # interactsh
 echo "Installing interactsh";
-go install -v github.com/projectdiscovery/interactsh/cmd/interactsh-client@latest && ln -s ~/go/bin/interactsh-client /usr/local/bin/;
-cd /home/tools/
+go install github.com/projectdiscovery/interactsh/cmd/interactsh-client@latest && ln -s ~/go/bin/interactsh-client /usr/local/bin/;
 echo "Done! interactsh installed.";
 sleep 1.5
 
 # meg
-echo "Installing meg";
 go install github.com/tomnomnom/meg@latest && ln -s ~/go/bin/meg /usr/local/bin/;
-cd /home/tools/
 echo "Done! meg installed.";
 sleep 1.5
 
 # naabu
 echo "Installing naabu";
-cd /home/tools/
-go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest && ln -s ~/go/bin/naabu /usr/local/bin/;
-cd /home/tools/
+go install github.com/projectdiscovery/naabu/v2/cmd/naabu@latest && ln -s ~/go/bin/naabu /usr/local/bin/;
 echo "Done! naabu installed.";
 sleep 1.5
 
 # qsreplace
 echo "Installing qsreplace";
-cd /home/tools/
 go install github.com/tomnomnom/qsreplace@latest && ln -s ~/go/bin/qsreplace /usr/local/bin/;
-cd /home/tools/
 echo "Done! qsreplace installed.";
 sleep 1.5
 
 # unfurl
 echo "Installing unfurl";
-cd /home/tools/
 go install github.com/tomnomnom/unfurl@latest && ln -s ~/go/bin/unfurl /usr/local/bin/;
-cd /home/tools/
 echo "Done! unfurl installed.";
 sleep 1.5
 
 # jsluice
 echo "Installing jsluice";
-cd /home/tools/
 go install github.com/BishopFox/jsluice/cmd/jsluice@latest && ln -s ~/go/bin/jsluice /usr/local/bin/;
-cd /home/tools/
 echo "Done! jsluice installed.";
 sleep 1.5
 
 # XSS scanner
 echo "Installing dalfox";
-cd /home/tools/
 go install github.com/hahwul/dalfox/v2@latest && ln -s ~/go/bin/dalfox /usr/local/bin/;
-cd /home/tools/
 echo "Done! dalfox installed.";
 sleep 1.5
 
+# QuickXSS
+echo "Installing QuickXSS";
+cd /home/tools/
+git clone https://github.com/theinfosecguy/QuickXSS.git;
+cd /home/tools/QuickXSS
+chmod +x install.sh
+./install.sh
+echo "Done! QuickXSS installed.";
+sleep 1.5
+
+
 # Custom Tools
 echo "Installing mildew";
-cd /home/tools/
 go install github.com/daehee/mildew/cmd/mildew@latest && ln -s ~/go/bin/mildew /usr/local/bin/;
-cd /home/tools/
 echo "Done! mildew installed.";
+sleep 1.5
+
+
+# Cloudflare Check
+go install github.com/dwisiswant0/cf-check@latest && ln -s ~/go/bin/cf-check /usr/local/bin/;
+echo "Done! cf-check installed.";
+sleep 1.5
+
+# filter-resolved
+go install github.com/tomnomnom/hacks/filter-resolved@latest && ln -s ~/go/bin/filter-resolved /usr/local/bin/;
+echo "Done! filter-resolved installed.";
 sleep 1.5
