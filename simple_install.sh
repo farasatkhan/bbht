@@ -11,6 +11,15 @@ source ~/.profile
 echo "Golang environment installation is done!";
 sleep 1.5
 
+#-------------Tools------------#
+sudo apt install -y libpcap-dev
+
+#---------naabu---------#
+go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
+ln -s ~/go/bin/naabu /usr/local/bin/;
+echo "Done! naabu installed.";
+sleep 1.5
+
 #---------Subfinder---------#
 echo "Installing Subfinder";
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
