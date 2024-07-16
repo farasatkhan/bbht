@@ -12,7 +12,8 @@ echo "Golang environment installation is done!";
 sleep 1.5
 
 #-------------Tools------------#
-sudo apt install -y libpcap-dev
+sudo apt install -y build-essential
+sudo aptinstall -y libpcap-dev
 
 #---------naabu---------#
 go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
