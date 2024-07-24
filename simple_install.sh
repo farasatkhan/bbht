@@ -17,6 +17,20 @@ source ~/.profile
 echo "Golang environment installation is done!";
 sleep 1.5
 
+#---------Create a Tools folder in Home
+echo "Create a Tools folder";
+mkdir /home/tools
+cd /home/tools/
+echo "Done!";
+sleep 1.5
+
+#-------------ghauri------------#
+cd /home/tools/
+git clone https://github.com/r0oth3x49/ghauri.git
+cd ghauri
+python3 -m pip install --upgrade -r requirements.txt --break-system-packages
+python3 setup.py install
+
 #-------------Tools------------#
 sudo apt install -y build-essential
 sudo apt install -y libpcap-dev
