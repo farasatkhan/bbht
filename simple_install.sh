@@ -1,6 +1,10 @@
 sudo apt -y update
 sudo apt -y upgrade
 
+#---------Install Python3---------#
+sudo apt install python3
+sudo apt install -y python3-pip
+
 #---------Install Golang---------#
 echo "Golang environment installation in progress ...";
 cd /tmp && wget https://go.dev/dl/go1.22.2.linux-amd64.tar.gz && tar xvf go1.22.2.linux-amd64.tar.gz;
