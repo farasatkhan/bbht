@@ -4,6 +4,8 @@ sudo apt -y upgrade
 #---------Install Python3---------#
 sudo apt install python3
 sudo apt install -y python3-pip
+sudo apt install pipx
+pipx ensurepath
 
 #---------Install Golang---------#
 echo "Golang environment installation in progress ...";
@@ -74,4 +76,10 @@ sleep 1.5
 echo "Installing amass";
 go install github.com/owasp-amass/amass/v4/...@master && ln -s ~/go/bin/amass /usr/local/bin/;
 echo "Done! amass installed.";
+sleep 1.5
+
+#---------waymore---------#
+echo "Installing waymore";
+pipx install git+https://github.com/xnl-h4ck3r/waymore.git
+echo "Done! waymore installed. You would need to open a new terminal";
 sleep 1.5
