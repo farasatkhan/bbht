@@ -34,6 +34,7 @@ python3 setup.py install
 #-------------Tools------------#
 sudo apt install -y build-essential
 sudo apt install -y libpcap-dev
+sudo apt install -y hashcat
 
 #---------naabu---------#
 go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
