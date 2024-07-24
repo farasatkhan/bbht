@@ -83,3 +83,9 @@ echo "Installing waymore";
 pipx install git+https://github.com/xnl-h4ck3r/waymore.git
 echo "Done! waymore installed. You would need to open a new terminal";
 sleep 1.5
+
+#---------gf---------#
+echo "Installing gf";
+go install -v github.com/tomnomnom/gf@latest && ln -s ~/go/bin/gf /usr/local/bin/;
+echo "Done! Gf installed.";
+sleep 1.5
